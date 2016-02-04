@@ -1,0 +1,59 @@
+
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: #EEEEEE;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #444;
+}
+
+/* Structure */
+.main-content {
+  max-width: 800px;
+}
+
+/* Form-Specific Styles */
+
+.form-heading {
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+
+/* File */
+.file {
+  position: relative;
+  display: inline-block;
+}
+
+.file input {
+  width: 1px;
+  position: absolute;
+  outline: none;
+  z-index: 1;
+}
+
+.file-label {
+  position: relative;
+  display: block;
+  border: 1px dashed #DDD;
+  background: #EEE;
+  color: #999;
+  text-align: center;
+  padding: 3em;
+  z-index: 2;
+  min-width: 15em;
+}
+
+/* Button */
+.btn {
+  padding: 0.75em 1.75em;
+  text-align: center;
+  background: #478dca;
+  border: 0;
+  color: white;
+}
