@@ -7,6 +7,7 @@ var myCats = [
     age: 8}
 ];
 
+//Matt's Solution
 //for (var arrayIndex = 0; arrayIndex < myCats.length; arrayIndex++) {
 //    console.log(myCats[arrayIndex].name + " is " + myCats[arrayIndex].age + " years old.");
 //}
