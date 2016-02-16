@@ -14,7 +14,10 @@ function pluralize (noun, number) {
                 break;
                 
 // HERE I added multiple words that share the same pluralizing rules together in order to run the same case code.
-            case "sheep" || noun === "cod" || noun === "deer":
+// EDIT: I corrected the syntax for multiple cases that share the same rule to be correct for switch.
+            case "sheep":
+            case "cod":
+            case "deer":
                 console.log(number + " " + noun);
                 break;
                     
