@@ -8,7 +8,7 @@ CSS
 
 textarea {
   width: 250px;
-  height: 250px;
+  height: 150px;
   font-size: 1em;
 }
 
