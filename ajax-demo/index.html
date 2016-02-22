@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="scripts.js"></script>
+  <title>GitHub Finder</title>
+</head>
+<body>
+  <main class="main-content">
+    <form class="user-form">
+      <input name="gh-login" type="text" value="chrisdavies">
+    </form>
+
+    <div class="user-info">
+    </div>
+  </main>
+
+  <script id="gh-error-template" type="text/html">
+    <div class="error">
+      <%- m.message %>
+    </div>
+  </script>
+
+  <script id="gh-user-template" type="text/html">
+    <a class="user-link" href="<%- m.html_url %>">
+      <img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar">
+      <span class="user-name">
+        <%- m.name || m.login %>
+      </span>
+      <span class="user-stats">
+        Has <%- m.public_repos %> repos.
+      </span>
+    </a>
+  </script>
+</body>
+</html>
