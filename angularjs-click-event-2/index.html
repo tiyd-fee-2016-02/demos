@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="ctrlClick">
+
+<button ng-click="count = count + 1">Add</button>
+<button ng-click="count = count - 1">Subtract</button>
+
+<p>{{ count }}</p>
+
+</div>
+
+<script src="controllers.js"></script>
+</body>
+</html>
