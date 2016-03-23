@@ -1,0 +1,41 @@
+.user-button {
+  background-color: #9b59b6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.user-yes {
+  background-color: #c0392b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.user-no {
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.user-message {
+  font-size: 12px;
+  padding: 5px;
+  font-family: sans-serif;
+}

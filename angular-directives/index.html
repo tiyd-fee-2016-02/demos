@@ -1,0 +1,32 @@
+<!--written with Chris Davies-->
+
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="DemoCtrl as mo">
+  <head>
+    <meta charset="utf-8">
+    <title>User Demo</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <main ng-cloak>
+
+      <button class="user-button" ng-repeat="user in mo.users" ng-click="mo.deleteUser(user)">Delete {{user.username}}</button>
+
+      <tiy-modal ng-if="mo.userToDelete" onclose="mo.cancelDelete">
+        <h1 class="user-message">Are you sure you want to delete {{mo.userToDelete.username}}?</h1>
+        <button class="user-yes" ng-click="mo.confirmDelete()">Yes</button>
+        <button class="user-no" ng-click="mo.cancelDelete()">No</button>
+      </tiy-modal>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="demo-controller.js"></script>
+    <script src="tiy-modal.js"></script>
+
+  </body>
+</html>
